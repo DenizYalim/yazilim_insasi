@@ -3,7 +3,7 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Mentor extends Character{
+public class Mentor extends Character implements Joinable{
     String title;
     ArrayList<Quest> questsOverseen = new ArrayList<>();
 
@@ -30,5 +30,10 @@ public class Mentor extends Character{
 
     public void notify(Quest notifier, String action) {
         notify(notifier, action, notifier);
+    }
+
+    @Override
+    public void joinQuest(Quest q) {
+        overseeQuest(q);
     }
 }
