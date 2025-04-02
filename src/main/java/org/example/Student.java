@@ -16,6 +16,20 @@ public class Student{
         spellsLearned = new ArrayList<>();
     }
 
+    // Returns true if input's name is in the spellsLearned ArrayList
+    public boolean knowsSpell(Spell spell){
+        boolean t = false;
+
+        for(Spell a : spellsLearned){
+            if(spell != null && a.name == spell.name)
+                t = true;
+        }
+        
+
+        return t;
+    }
+    
+
     public boolean learnSpell(Spell spell){
         for(Spell s : spellsLearned){
             if(spell == null || s.name.equals(spell.name)){
