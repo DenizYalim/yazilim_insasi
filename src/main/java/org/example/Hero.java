@@ -1,7 +1,8 @@
 package org.example;
+ 
 
 // Represents playable classes
-public class Hero extends Character{
+public class Hero extends Character{ 
 
     public Hero(String n, int l) {
         super(n, l);
@@ -9,7 +10,6 @@ public class Hero extends Character{
 
     @Override
     public void speak() {
-       
+       System.out.println("speech");
     }
-    
 }
