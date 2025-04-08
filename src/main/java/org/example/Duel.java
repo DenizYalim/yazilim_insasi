@@ -19,7 +19,6 @@ public class Duel{
             return;
         }
 
-        boolean stu1win = true;
         if(s1know)
             System.out.println("Student: "+ s1.name + "wins the duel by knowledge!!");
         else
