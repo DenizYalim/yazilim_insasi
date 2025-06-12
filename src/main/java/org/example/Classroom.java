@@ -12,6 +12,10 @@ public class Classroom{
         }
     }
 
+    public int getSize(){
+        return students.size();
+    }
+
     public Student findStudent(String name){
         for(Student i : students){
             if(i.name == name){

@@ -1,5 +1,5 @@
 package org.example;
-class Spell{
+public class Spell{
     public String name;
 
     public Spell(SpellBook factory, String name){

@@ -24,7 +24,7 @@ public class SpellBook{
 
         for(String a : spellNames){
             //System.out.println(a);
-            if(a == spellName)
+            if(a.equals(spellName))
                 t = true;
         }
         return t;
